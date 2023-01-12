@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Welcome To EdgeLedger</title>
@@ -97,7 +98,10 @@
       </header>
       <div class="row">
         <div class="column">
-          <img src="images/cases/cases1.jpg" alt="">
+          <a href="images/cases/cases1.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus.">
+            <img src="images/cases/cases1.jpg" alt="">
+          </a>
           <img src="images/cases/cases2.jpg" alt="">
         </div>
         <div class="column">
@@ -205,7 +209,9 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+    </script>
+  <script src="js/lightbox.min.js"></script>
   <script>
     const navbar = document.getElementById('navbar');
     let scrolled = false;
